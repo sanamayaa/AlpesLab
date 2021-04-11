@@ -49,4 +49,8 @@ public interface IServicioCatalogoMockLocal
      */
     public void removerEjemplarMueble(long id);
 
+    public Mueble buscarMueble(long mb);
+
+   
+
 }

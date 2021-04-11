@@ -100,6 +100,11 @@ public class ServicioCatalogoMock implements IServicioCatalogoMockRemote,IServic
      * Remueve un ejemplar del mueble (no el mueble)
      * @param id Identificador único del mueble
      */
+    public Mueble buscarMueble(long id){
+        Mueble m = (Mueble) persistencia.findById(Mueble.class, id);
+        return m;
+    }
+   
     @Override
     public void removerEjemplarMueble(long id)
     {
